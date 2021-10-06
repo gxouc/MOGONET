@@ -3,7 +3,7 @@
 from train_test import train_test
 
 if __name__ == "__main__":    
-    data_folder = 'ROSMAP'
+    data_folder = '/content/MOGONET/ROSMAP'
     view_list = [1,2,3]
     num_epoch_pretrain = 500
     num_epoch = 2500
@@ -11,9 +11,9 @@ if __name__ == "__main__":
     lr_e = 5e-4
     lr_c = 1e-3
     
-    if data_folder == 'ROSMAP':
+    if data_folder == '/content/MOGONET/ROSMAP':
         num_class = 2
-    if data_folder == 'BRCA':
+    if data_folder == '/content/MOGONET/BRCA':
         num_class = 5
     
     train_test(data_folder, view_list, num_class,
