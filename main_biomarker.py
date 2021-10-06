@@ -5,12 +5,12 @@ import copy
 from feat_importance import cal_feat_imp, summarize_imp_feat
 
 if __name__ == "__main__":
-    data_folder = 'BRCA'
+    data_folder = '/content/MOGONET/BRCA'
     model_folder = os.path.join(data_folder, 'models')
     view_list = [1,2,3]
-    if data_folder == 'ROSMAP':
+    if data_folder == '/content/MOGONET/ROSMAP':
         num_class = 2
-    if data_folder == 'BRCA':
+    if data_folder == '/content/MOGONET/BRCA':
         num_class = 5
 
     featimp_list_list = []
