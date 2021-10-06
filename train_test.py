@@ -110,10 +110,10 @@ def train_test(data_folder, view_list, num_class,
     test_inverval = 50
     num_view = len(view_list)
     dim_hvcdn = pow(num_class,num_view)
-    if data_folder == 'ROSMAP':
+    if data_folder == '/content/MOGONET/ROSMAP':
         adj_parameter = 2
         dim_he_list = [200,200,100]
-    if data_folder == 'BRCA':
+    if data_folder == '/content/MOGONET/BRCA':
         adj_parameter = 10
         dim_he_list = [400,400,200]
     data_tr_list, data_trte_list, trte_idx, labels_trte = prepare_trte_data(data_folder, view_list)
