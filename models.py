@@ -52,11 +52,7 @@ class GCN_E(nn.Module):
         x = F.leaky_relu(x, 0.25)
         
         return x
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
-import numpy as np
 from torch.autograd import Variable
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
